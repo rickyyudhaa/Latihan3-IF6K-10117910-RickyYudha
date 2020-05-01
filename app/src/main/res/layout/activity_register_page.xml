@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="90dp"
+    android:background="@color/blue"
+    tools:context=".latihansharedpreference.MainActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_child_friendly" />
+
+    <TextView
+        android:id="@+id/ngasuh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/img_logo"
+        android:layout_marginLeft="10dp"
+        android:text="@string/ngasuh"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ngasuh"
+        android:text="@string/siap"
+        android:textSize="15dp"
+        android:textColor="@android:color/white"/>
+
+
+    <TextView
+        android:id="@+id/daftar"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tagline"
+        android:gravity="center"
+        android:text="@string/daftar"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="20dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/daftar"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff" />
+
+    <EditText
+        android:id="@+id/reg_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:hint="@string/username"
+        android:layout_below="@id/daftar"
+        android:layout_marginTop="30dp"
+        android:imeOptions="actionNext"
+        android:inputType="textCapWords"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginTop="15dp"
+        android:hint="@string/pwd"
+        android:imeActionId="6"
+        android:layout_below="@id/reg_username"
+        android:imeActionLabel="Sign In"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/retype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginTop="15dp"
+        android:hint="@string/retype"
+        android:imeActionId="6"
+        android:layout_below="@id/reg_password"
+        android:imeActionLabel="Sign In"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="14dp" />
+
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/roundedbutton"
+        android:text="@string/Masuk"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

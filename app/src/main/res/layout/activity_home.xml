@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/blue"
+    tools:context=".latihansharedpreference.home">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_child_friendly" />
+
+    <TextView
+        android:id="@+id/ngasuh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/img_logo"
+        android:text="@string/ngasuh"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/img_logo"
+        android:text="@string/siap"
+        android:textSize="15dp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/txtHallo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/tagline"
+        android:gravity="center"
+        android:text="@string/hallo"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHallo"
+        android:gravity="center"
+        android:text="@string/nama"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="20dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/txtName"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/roundedbutton"
+        android:text="@string/Masuk"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

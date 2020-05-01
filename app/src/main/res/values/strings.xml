@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">latihan3</string>
+    <string name="ngasuh">NGASUH</string>
+    <string name="siap">Siap Menjadi Orangtua Muda</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="pwd">Password</string>
+    <string name="retype">Confirm Password</string>
+    <string name="fpwd">Forget Password?</string>
+    <string name="Masuk">Masuk</string>
+    <string name="regist">Belum Punya Akun? Yuk Daftar</string>
+    <string name="daftar">Daftar</string>
+    <string name="hallo">Hallo</string>
+    <string name="nama">Ricky Yudha</string>
+</resources>
